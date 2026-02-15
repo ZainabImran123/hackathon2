@@ -1,0 +1,298 @@
+/* Global Font */
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f8f9fa;
+}
+
+/* Main Card Container */
+.main-card {
+    min-height: 550px;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Left Panel Styling */
+.left-panel {
+    background-color: #f8fcf9;
+    /* Very light green hint */
+    overflow: hidden;
+}
+
+/* Saylani Green Logo Color fix if needed, but we use image */
+
+/* Wavy Background */
+.wave-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Two waves: a lighter one and the main green one */
+    background:
+        url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%238cd6a8" fill-opacity="0.2" d="M0,256L60,245.3C120,235,240,213,360,208C480,203,600,213,720,229.3C840,245,960,267,1080,261.3C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path><path fill="%2300A651" fill-opacity="0.4" d="M0,288L60,272C120,256,240,224,360,218.7C480,213,600,235,720,250.7C840,267,960,277,1080,266.7C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 0;
+}
+.saylani{
+    padding-bottom: 140px;
+    padding-left: 50px;
+}
+.campus{
+    margin-top: 200px;
+}
+.three{
+    text-decoration: none;
+    color: white;
+}
+.two{
+    text-decoration: none;
+    color: white;
+}
+.one {
+    text-decoration: none;
+    color: white;
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #00A651;
+    /* Saylani Green focus */
+}
+
+/* Role Toggle Pill */
+.role-toggle-container {
+    background-color: #f1f3f5;
+}
+
+.role-btn {
+    border: none;
+    font-weight: 500;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.role-btn.active-role {
+    background-color: #fff !important;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Login Button */
+.btn-login {
+    background-color: #2563EB;
+    /* Royal Blue */
+    border: none;
+    font-size: 0.95rem;
+}
+
+.btn-login:hover {
+    background-color: #1d4ed8;
+}
+
+/* Google Button */
+.google-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+.google-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-card {
+        border-radius: 12px;
+    }
+}
+
+/* --- Admin Dashboard Styles --- */
+
+/* Stats Cards */
+.stats-card {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: translateY(-3px);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Table Management */
+.table thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Custom Badges (Saylani Theme) */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5em 1em;
+}
+
+.badge-pending {
+    background-color: #FFF8E1 !important;
+    /* Light Amber */
+    color: #FFA000 !important;
+    /* Amber Text */
+}
+
+.badge-resolved,
+.badge-found,
+.badge-success-subtle {
+    background-color: #E8F5E9 !important;
+    /* Light Green */
+    color: #2E7D32 !important;
+    /* Dark Green */
+}
+
+.badge-matching,
+.badge-setup {
+    background-color: #E3F2FD !important;
+    /* Light Blue */
+    color: #1565C0 !important;
+    /* Dark Blue */
+}
+
+.badge-declined {
+    background-color: #FFEBEE !important;
+    /* Light Red */
+    color: #C62828 !important;
+    /* Dark Red */
+}
+
+
+/* Notifications Panel */
+.list-group-item {
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* --- Student Dashboard Styles --- */
+
+/* Sidebar Navigation */
+.sidebar-panel {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar-nav .nav-link {
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: #f8f9fa;
+    color: #00A651 !important;
+}
+
+.sidebar-nav .nav-link.active {
+    background-color: #00A651;
+    /* Saylani Green */
+    color: #fff !important;
+    box-shadow: 0 4px 10px rgba(0, 166, 81, 0.3);
+}
+
+.sidebar-nav .nav-link.active i {
+    color: #fff !important;
+}
+
+.sidebar-nav .nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Action Buttons */
+.btn-success {
+    background-color: #00A651;
+    border-color: #00A651;
+}
+
+.btn-success:hover {
+    background-color: #008f45;
+    border-color: #008f45;
+}
+
+.btn-outline-success {
+    color: #00A651;
+    border-color: #00A651;
+}
+
+.btn-outline-success:hover {
+    background-color: #00A651;
+    color: #fff;
+}
+
+/* --- Report Page Styles --- */
+
+/* Urgency Selector */
+.urgency-btn {
+    transition: all 0.2s ease;
+    border-color: #e0e0e0 !important;
+}
+
+.urgency-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* Dot Indicator */
+.dot-indicator {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Active States for Urgency */
+#low:checked+label {
+    background-color: #fff;
+    border-color: #198754 !important;
+    /* Success Green */
+    box-shadow: 0 0 0 1px #198754;
+    color: #198754 !important;
+    font-weight: 600;
+}
+
+#medium:checked+label {
+    background-color: #fff;
+    border-color: #ffc107 !important;
+    /* Warning Yellow */
+    box-shadow: 0 0 0 1px #ffc107;
+    color: #b58900 !important;
+    /* Darker yellow for text */
+    font-weight: 600;
+}
+
+#high:checked+label {
+    background-color: #fff;
+    border-color: #dc3545 !important;
+    /* Danger Red */
+    box-shadow: 0 0 0 1px #dc3545;
+    color: #dc3545 !important;
+    font-weight: 600;
+}

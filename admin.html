@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="link.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid p-4">
+        <div class="row g-4">
+            <!-- Left Column: Main Dashboard -->
+            <div class="col-lg-8">
+                <div class="bg-white rounded-4 p-4 shadow-sm mb-4">
+                    <div class="d-flex align-items-center mb-4 justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-columns text-success fs-4 me-2"></i>
+                            <h4 class="fw-bold mb-0">Admin Dashboard</h4>
+                        </div>
+                        <a href="index.html" class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold"><i
+                                class="fas fa-sign-out-alt me-1"></i> Logout</a>
+                    </div>
+
+                    <!-- Stats Cards Row 1 -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <div
+                                class="stats-card p-3 rounded-4 d-flex align-items-center justify-content-between shadow-sm border">
+                                <div>
+                                    <div class="d-flex align-items-center text-success mb-1">
+                                        <i class="fas fa-users me-2"></i>
+                                        <small class="fw-bold">Total Users</small>
+                                    </div>
+                                    <h2 class="fw-bold mb-0">540</h2>
+                                </div>
+                                <div class="icon-box bg-success bg-opacity-10 text-success rounded-3 p-3">
+                                    <i class="fas fa-users fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div
+                                class="stats-card p-3 rounded-4 d-flex align-items-center justify-content-between shadow-sm border">
+                                <div>
+                                    <div class="d-flex align-items-center text-danger mb-1">
+                                        <i class="fas fa-clipboard-list me-2"></i>
+                                        <small class="fw-bold">Open Complaints</small>
+                                    </div>
+                                    <h2 class="fw-bold mb-0">12</h2>
+                                </div>
+                                <div class="icon-box bg-danger bg-opacity-10 text-danger rounded-3 p-3">
+                                    <i class="fas fa-star fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stats Cards Row 2 -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <div
+                                class="stats-card p-3 rounded-4 d-flex align-items-center justify-content-between shadow-sm border">
+                                <div>
+                                    <div class="d-flex align-items-center text-success mb-1">
+                                        <i class="fas fa-briefcase me-2"></i>
+                                        <small class="fw-bold">Lost Items Pending</small>
+                                    </div>
+                                    <h2 class="fw-bold mb-0">6</h2>
+                                </div>
+                                <div class="icon-box bg-success bg-opacity-10 text-success rounded-3 p-3">
+                                    <i class="fas fa-briefcase fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div
+                                class="stats-card p-3 rounded-4 d-flex align-items-center justify-content-between shadow-sm border">
+                                <div>
+                                    <div class="d-flex align-items-center text-success mb-1">
+                                        <i class="fas fa-user-check me-2"></i>
+                                        <small class="fw-bold">Active Volunteers</small>
+                                    </div>
+                                    <h2 class="fw-bold mb-0">24</h2>
+                                </div>
+                                <div class="icon-box bg-success bg-opacity-10 text-success rounded-3 p-3">
+                                    <i class="fas fa-user-friends fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Complaints Management Table -->
+                    <h5 class="fw-bold mb-3 text-secondary">Complaints Management</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr class="text-secondary small text-uppercase">
+                                    <th class="border-0 rounded-start">ID</th>
+                                    <th class="border-0">User</th>
+                                    <th class="border-0">Category</th>
+                                    <th class="border-0 rounded-end text-end">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold text-muted">506</td>
+                                    <td class="fw-semibold">Zain Maker</td>
+                                    <td class="text-muted">Complaints</td>
+                                    <td class="text-end"><span class="badge badge-resolved rounded-3">Resolved</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-muted">509</td>
+                                    <td class="fw-semibold">Musa Noman</td>
+                                    <td class="text-muted">Docs</td>
+                                    <td class="text-end"><span class="badge badge-pending rounded-3">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-muted">505</td>
+                                    <td class="fw-semibold">Waqar Zaka</td>
+                                    <td class="text-muted">Portal</td>
+                                    <td class="text-end"><span class="badge badge-resolved rounded-3">Resolved</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-muted">508</td>
+                                    <td class="fw-semibold">New Lead</td>
+                                    <td class="text-muted">Lost & Found</td>
+                                    <td class="text-end"><span class="badge badge-setup rounded-3">Setup</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Notifications -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+                    <div
+                        class="card-header bg-dark text-white p-3 border-0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-white rounded-3 p-1 me-2">
+                                <i class="fas fa-heart text-danger"></i>
+                            </div>
+                            <h6 class="mb-0 fw-bold">Notifications</h6>
+                        </div>
+                        <i class="fas fa-ellipsis-v text-secondary"></i>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                            <!-- Notification Item 1 -->
+                            <div class="list-group-item p-3 border-bottom-0 d-flex align-items-start">
+                                <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="fas fa-user-lock"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-1 small">Complaint Marked as Resolved</h6>
+                                    <div class="d-flex justify-content-between text-muted small"
+                                        style="font-size: 0.75rem;">
+                                        <span>2113-8321</span>
+                                        <span>42m</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification Item 2 -->
+                            <div class="list-group-item p-3 border-bottom-0 d-flex align-items-start bg-light">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-1 small">Laptop Found: Matches with Your Report!</h6>
+                                    <div class="d-flex justify-content-between text-muted small"
+                                        style="font-size: 0.75rem;">
+                                        <span>529.5kb • D0339</span>
+                                        <span>40m</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification Item 3 -->
+                            <div class="list-group-item p-3 border-bottom-0 d-flex align-items-start">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="fas fa-asterisk"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-1 small">Reminder: Event Tomorrow</h6>
+                                    <div class="d-flex justify-content-between text-muted small"
+                                        style="font-size: 0.75rem;">
+                                        <span>2115-8201</span>
+                                        <span>48m</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification Item 4 -->
+                            <div class="list-group-item p-3 border-bottom-0 d-flex align-items-start">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-1 small">Stats Reset!</h6>
+                                    <div class="d-flex justify-content-between text-muted small"
+                                        style="font-size: 0.75rem;">
+                                        <span>322196</span>
+                                        <span>3pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
